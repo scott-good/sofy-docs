@@ -3,7 +3,7 @@
 This repository contains the source and configuration files for [sofydocs.com](https://sofydocs.com) which will become the documentation hub for [HCL SoFy](https://hclsofy.com), the HCL Software Cloud Native portal.
 
 ## Contributing
-Issue reports and pull requests to improve [sofydocs.com](https://sofydocs.com) are always welcome on GitHub at [https://github.com/HCL-TECH-SOFTWARE/sofy-docs](https://github.com/HCL-TECH-SOFTWARE/sofy-docs). 
+Issue reports and pull requests to improve [sofydocs.com](https://sofydocs.com) are always welcome at [https://github.com/HCL-TECH-SOFTWARE/sofy-docs](https://github.com/HCL-TECH-SOFTWARE/sofy-docs). 
 
 ### Submitting code changes:
 - Validate your change locally (see the Development section below)
