@@ -263,7 +263,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x86_64-linux
+  x86_64-linux-musl
 
 DEPENDENCIES
   github-pages
@@ -274,4 +274,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.2.16
+   2.2.2
