@@ -27,7 +27,6 @@ footer_content: "© Copyright 2021 HCL SoFy | <a href=\"https://hcltechsw.com/wp
 heading_anchors: true
 # Build settings
 remote_theme: pmarsceill/just-the-docs
-theme: "just-the-docs"
 
 plugins:
   - jekyll-feed
