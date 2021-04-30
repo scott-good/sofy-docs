@@ -9,7 +9,7 @@ nav_order: 1
 
 ## **Quick HCL SoFy Introduction**
 
-Welcome to HCL SoFy (short for “Solution Factory”), the next generation software development accelerator. Battle-hardened enterprise software is being modernized and transformed through the application of cloud-centered technologies and practices. These include the following: running in docker containers, creation of stand-alone and individually scalable services, enablement for cloud scaling and orchestration, continuous delivery of updates, and opening up capabilities with new REST APIs.
+Welcome to HCL SoFy (short for Solution Factory), the next generation software development accelerator. Battle-hardened enterprise software is being modernized and transformed through the application of cloud-centered technologies and practices. These include the following: running in docker containers, creation of stand-alone and individually scalable services, enablement for cloud scaling and orchestration, continuous delivery of updates, and opening up capabilities with new REST APIs.
 HCL SoFy amplifies the integration of world-class HCL Software products & services to generate a customized solution quickly and easily. This all can be accomplished in three easy steps: Explore the Catalog, Create a Solution, and Release to the Cloud.
 
 
