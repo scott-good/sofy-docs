@@ -6,7 +6,7 @@ grand_parent: Installing Solutions
 nav_order: 1
 ---
 
-# **Supported Kubernetes Environments**
+# **Supported Kubetes Environments**
 
 There are many options for your own Kubernetes environment:
 
