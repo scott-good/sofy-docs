@@ -107,7 +107,7 @@ certificate:
  ```
 
 ____
-## **V. Access your Solution using the domain name and valid the certificate**
+## **V. Access your Solution using the domain name and validiate the certificate**
 
 For example:
 
