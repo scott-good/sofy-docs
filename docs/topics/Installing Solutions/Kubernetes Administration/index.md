@@ -7,7 +7,7 @@ nav_order: 2
 ---
 # **Installing Solutions Overview for Kubernetes Administrators**
 
-These instructions are designed for experienced Kubernetes users and list the steps for Solution install. If you need more details on any step, see the **Installing Solutions: Step-by-step instructions** Guide. Supported versions of Kubernetes, Helm, and Cert-Manager are listed in the **Supported Kubernetes Environments** Guide.
+These instructions are designed for experienced Kubernetes users and list the steps for Solution install. If you need more details on any step, see the **Installing Solutions: Step-by-step Instructions** Guide. Supported versions of Kubernetes, Helm, and Cert-Manager are listed in the **Supported Kubernetes Environments** Guide.
 
 You will need the following:
 
