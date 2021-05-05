@@ -13,7 +13,7 @@ These services can be used to provide enhanced management and security of your S
 The Solution Console  application provides a simplified solution administration experience, including:
 *	Kubernetes cluster info, which is filtered to only show the information for the Solution resources; this is useful if you are new to Kubernetes or are operating in a large cluster, but are only concerned with the solution application
 *	URLs for the services and products selected from the SoFy catalog - these include links to product GUIs, REST API swagger UIs, and base URLs for REST APIs
-*	Easy setting of Flexnet License Server properties for HCL licensed content
+*	Easy setting of FlexNet License Server properties for HCL licensed content
 *	Links to other common services in the solution:
   * the [Grafana](https://grafana.com/) monitoring dashboard
   * the [KeyCloak](https://www.keycloak.org/) GUI to manage users, passwords, and access controls
