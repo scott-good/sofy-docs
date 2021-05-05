@@ -4,7 +4,6 @@ layout: default
 parent: Installing Solutions
 nav_order: 1
 ---
-
 # **Installing Solutions Getting Started with Solutions in a Google Cloud Platform Trial Account Tutorial**
 
 These instructions are designed for those new to Kubernetes, and have simplified steps to:
