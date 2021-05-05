@@ -103,7 +103,7 @@ certificate:
 **Option B:** Install your original Helm chart with additional configuration override on the install command, similar to this:
 
  ```
- helm install udeploy alex-deploy-0.1.0.tgz  --set global.hclImagePullSecret=secret-name,global.hclImagePullSecret=secret-name,anchor.config.hostname=https://hclsoftware.compliance.flexnetoperations.com,anchor.config.serverID=\\{default\\}=D4U85APR0XN9,global.domain=udepsol.alexmul.com,certificate.type=production,certificate.email=sofy.mulholland@hcl.com,certificate.dns.type=clouddns,certificate.dns.project=dark-airway-256814,certificate.dns.serviceAccountSecretRef.name=gcp-service-account-secret,certificate.dns.serviceAccountSecretRef.key=credentials.json
+ helm install udeploy alex-deploy-0.1.0.tgz  --set global.hclImagePullSecret=secret-name,global.hclImagePullSecret=secret-name,global.domain=sol1.alexmul.com,certificate.type=production,certificate.email=sofy.mulholland@hcl.com,certificate.dns.type=clouddns,certificate.dns.project=dark-airway-256814,certificate.dns.serviceAccountSecretRef.name=gcp-service-account-secret,certificate.dns.serviceAccountSecretRef.key=credentials.json
  ```
 
 ____
