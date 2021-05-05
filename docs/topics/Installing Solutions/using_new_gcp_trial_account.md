@@ -19,7 +19,7 @@ You can install more than one solution in a cluster, if there are sufficient res
 You will need the following to get started:
 * A valid credit card. (Google states that you will not be charged for the trial account.)
 * A Solution chart downloaded from SoFy to your local file system.  On the Solution detail page, there is a download icon near the top right-hand corner.
-* Details of the Flexnet license server that contain your entitlements to run the HCL Software included in your solution.  Alternatively, you can install a solution without these values, and add them later through the Solution Console 'Settings', but some of the software may not be fully functional until that is done.
+* Details of the FlexNet license server that contain your entitlements to run the HCL Software included in your solution.  Alternatively, you can install a solution without these values, and add them later through the Solution Console 'Settings', but some of the software may not be fully functional until that is done.
 * Your CLI secret for the HCL docker registry. Instructions to obtain your CLI secret will be provided further down the documentation when it is needed.
 
 
