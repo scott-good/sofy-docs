@@ -23,6 +23,8 @@ Your FlexNet information should be obtained from your organization's license adm
 hclFlexnetURL=https://hclsoftware.compliance.flexnetoperations.com
 ```
 
+If you have administrative rights to the [FlexNet Operations Portal](https://hclsoftware.flexnetoperations.com/flexnet/operationsportal) then you can retrieve the ID for your Cloud License Server(s) in **Devices** -> **Devices** view. You can also use this view to view and map entitlements to your Cloud License Server(s). 
+
 If your organization uses a locally installed license server, the url will include a domain specific to your organization or an IP address and port typically in the 27000-27009 range
 
 **There are two ways you can set the license server information in a solution:**
