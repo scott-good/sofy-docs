@@ -5,8 +5,8 @@ parent: Kubernetes Administration
 grand_parent: Installing Solutions
 nav_order: 2
 ---
-# **Installing Solutions Step-By-Step Instructions**
-These instructions are designed for those who have an existing Kubernetes environment, and detail the steps for Solution install. Supported versions of Kubernetes, Helm, and Cert-Manager are listed in the **Supported Kubernetes Environments** Guide. If you need more details on any step, see the **Installing Solutions: Getting Started with a GCP Trial Account Tutorial**, which also provides a script that automates most of the setup.
+# **Installing Solutions Step By Step Instructions**
+These instructions are designed for those who have an existing Kubernetes environment, and detail the steps for solution install. Supported versions of Kubernetes, Helm and Cert-Manager are listed in the **Supported Kubernetes Environments** guide. If you need more details on any step, see the **Installing Solutions: Getting Started with a GCP Trial Account Tutorial**, which also provides a script that automates most of the setup.
 
 You will need permissions to install to the Kubernetes cluster. Use of a cluster that supports dynamic PV is recommended.
 
@@ -21,38 +21,37 @@ To install your solution:
    * This script can be used to perform the Cert-Manager install, or to examine the commands required:  https://hclcr.io/files/sofy/scripts/cert-manager-setup.sh.
 
 
-3. Create a namespace for your solution (optional).
-    * Each solution must be installed in a separate namespace; if you install into the default namespace you can omit the --namespace parameters on the remaining commands.
+3. Create a namespace for your solution (optional)
+    * Each solution must be installed in a separate namespace.  If you install into the default namespace you can omit the --namespace parameters on the remaining commands.
       ```
       kubectl create namespace [name]
       ```
 
-4. Create a pull secret in the Solution namespace.
-    * The default name for the pull secret used by Solution charts is 'sandbox-secret.' If you use this name for your secret, you will not need to specify your pull secret name on the Helm install command below.
 
+4. Create an image pull secret in the solution namespace
     ```
     kubectl create secret docker-registry [secret-name] --docker-server=hclcr.io --docker-username=[sofy userid] --docker-password=[CLI secret] --namespace=[solution namespace]
     ```
-    * To set your Harbor CLI secret, login to hclcr.io with your HCL SoFy credentials, selecting LOGIN VIA OIDC PROVIDER 
-    * Open your User Profile (in the top right corner, click on the dropdown for your username) and enter a secret string of your choice  
-    * Use this string as the CLI secret in the command shown above
+    * To set your Harbor CLI secret, login to hclcr.io with your HCL/SoFy credentials, selecting LOGIN VIA OIDC PROVIDER.  
+    * Open your User Profile (in the top right corner, click on the dropdown for your username) and enter a secret string of your choice.  
+    * Use this string as the CLI secret in the command shown above.
 
-5. Use Helm to install the solution chart.
+5. Use Helm to install the solution chart
     
-    The Solution chart can be downloaded from the SoFy application, on the Solution details screen. 
+    The solution chart can be downloaded from the SoFy application, on the Solution details screen. 
     ```
     helm install [release-name] [file-name] --namespace [solution-namespace] --set global.hclImagePullSecret=[secret-name] --set hclFlexnetURL=[flexnet-url] --set hclFlexnetID=[flexnet-id]
     ```
     Summary of the variables above:
     * **[release-name]** A Helm release name that is not already used
-    * **[file-name]** The file name of your downloaded Solution
-    * **[solution-namespace]** The namespace you are installing your Solution into
-    * **[secret-name]** The name of your pull secret created in Step #4 
-    * **[flexnet-url],[flexnet-id]** Your license server information. For more information about these fields see **How to connect a Solution to a Flexnet License Server**. If you do not specify these values, some Solution contents may not initialize properly or have full function available until you enter your license server information via the Solution Console 'Settings' 
+    * **[file-name]** The file name of your downloaded solution
+    * **[solution-namespace]** The namespace you are installing your solution into
+    * **[secret-name]** The name of your pull secret created in Step #4. 
+    * **[flexnet-url],[flexnet-id]** Your license server information. For more information about these fields see **How to connect a Solution to a FlexNet License Server** below. If you do not specify these values, some solution contents may not initialize properly or have full function available until you enter your license server information via the Solution Console 'Settings'. 
     
-    You may need to set additional values overrides for the specific contents of your Solution, see the documentation for those products and services in the SoFy catalog.
+    You may need to set additional values overrides for the specific contents of your solution, see the documentation for those products and services in the SoFy catalog.
 
-    If you are using an AWS EKS cluster, add this annotation to the Solution's ambassador service so it can receive an external IP:
+    If you are using an AWS EKS cluster, add this annotation to the solution's ambassador service so it can receive an external IP:
     ```
     kubectl annotate svc [solution-ambassador-svc] -n [solution-namespace] service.beta.kubernetes.io/aws-load-balancer-internal=0.0.0.0/0
     ```
@@ -73,8 +72,9 @@ To install your solution:
 
 6.  Access the Solution Console
 
-    Once the install has completed and all pods are ready, enter the HOST into this link to access the Solution Console app in your browser: h<span>ttps://sofy-console.[HOST]. You will see some warnings about the certificate used in the Solution; it is safe to accept these and proceed to the Solution Console application. Log in to the application with the default User ID and password: "sol-admin" and 'pass" are the credentials.
+    Once the install has completed and all pods are ready, enter the HOST into this link to access the Solution Console app in your browser: h<span>ttps://sofy-console.[HOST] . You will see some warnings about the certificate used in the solution; it is safe to accept these and proceed to the Solution Console application. Log in to the application with the default userid and password: sol-admin and pass.
 
-    The Solution console provides information about all parts of the Solution, as well as links to the home pages of the included products and services.
+    The solution console provides information about all parts of the solution, as well as links to the home pages of the included products and services.
 
-    The Tutorial **Installing Solutions: Getting Started with Solutions in a Google Cloud Platform Trial Account Tutorial** provides some details on viewing the status of the install process and various troubleshooting tips.
+    The Tutorial **Installing Solutions: Getting Started with Solutions in a Google Cloud Platform Trial Account Tutorial** provides some details on viewing the status of the install process, and some troubleshooting tips.
+
