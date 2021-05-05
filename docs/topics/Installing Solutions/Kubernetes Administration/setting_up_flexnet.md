@@ -17,7 +17,7 @@ When HCL Software products are run in a SoFy solution, the license server inform
 When you install a solution into your own environment, you will need to provide your FlexNet License Server URL and FlexNet License Server ID, so that the solution can connect to the license server.  
 
 ## **How to determine your hclFlexnetURL and hclFlexnetID**
-Your FlexNet information should be obtained from your organization's license administrator. The hclFlexnetID will be unique to your organization. If your organization uses a CLS (Cloud License Server), the hclFlexNetURL will in most cases be: 
+Your FlexNet information should be obtained from your organization's license administrator. The hclFlexnetID will be unique to your organization. If your organization uses a CLS (Cloud License Server), the hclFlexnetURL will in most cases be: 
 
 ```
 hclFlexnetURL=https://hclsoftware.compliance.flexnetoperations.com
@@ -33,7 +33,7 @@ If your organization uses a locally installed license server, the url will inclu
     ```
 *  After installing the solution, using the Solution Console 
     1. Within the Solution Console, click on the **Gear** icon and select **Manage License Server**.
-    2. Provide your Flexnet License Server URL and FlexNet Server ID
+    2. Provide your FlexNet License Server URL and FlexNet Server ID
     3. Click **Apply** and your license will be applied.
 
 Note that some product services may not initialize until the license server has been configured and may require a restart to connect to the license server.  This can be achieved by deleting the relevant pod, which can be done through the 'Pods' view in the Solution Console.
