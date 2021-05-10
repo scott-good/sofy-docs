@@ -4,27 +4,27 @@ layout: default
 parent: Using Solutions
 nav_order: 3
 ---
-# **Accessing solutions programmatically**
+# **Accessing Solutions Programmatically**
 
-Many of the catalog services in a solution have REST APIs which are simple to use in client applications. The code examples shown below are written in Java, using the HTTP Client that was new in Java version 11 (java.net.http.HttpClient), but with REST you can choose from many programming languages and REST libraries for your application.
+Many of the SoFy Catalog services in a solution contain REST APIs, which are simple to use in client applications. The code examples shown below are written in Java, using the HTTP Client that was new in Java version 11 (java.net.http.HttpClient), but with REST you can choose from many programming languages and REST libraries for your application.
 
-## Discovering REST API documentation for SoFy Catalog services
+## Discovering REST API Documentation for SoFy Catalog Services
 
-There are two ways to discover the REST APIs provided by SoFy Catalog services and products.  Both rely on the API being documented using the Swagger v2 or OpenAPI v3 standard:
+There are two ways to discover the REST APIs provided by SoFy Catalog services and products. Both rely on the API being documented using the Swagger v2 or OpenAPI v3 standard:
 
 * **SoFy Catalog**
 	* Click on a catalog entry to view its documentation. The ‘API Documentation’ tab will contain available REST API documentation. 
 In the catalog, this is simply a rendering of the documentation; there is no live instance of the service available, so the REST API methods cannot be run in this environment. The documentation is provided as reference for your application coding.
 
 
-* **Swagger UIs in deployed solutions**
-	* In some cases, a live Swagger or OpenAPI UI is available within a service or product, once it is deployed in an installed solution. Links to these UIs are shown in the Solution Console in the ‘General Information’ for each entry, under ‘API EXPLORER’. 
+* **Swagger UIs in Deployed Solutions**
+	* In some cases, a live Swagger or OpenAPI UI is available within a service or product once it is deployed in an installed solution. Links to these UIs are shown in the Solution Console in the ‘General Information’ for each entry, under the ‘API EXPLORER’ tag. 
 
-## Discovering REST API base URLs in deployed solutions
+## Discovering REST API Base URLs in Deployed Solutions
 
-REST API base URLs are displayed in the Solution Console, in the ‘General Information’ for each entry, under ‘API BASE’.
+REST API base URLs are displayed in the Solution Console, in the ‘General Information’ for each entry, under the ‘API BASE’ tag.
 
-## Handling self-signed certificates
+## Handling Self-Signed Certificates
 
 By default, SoFy generates a self-signed SSL/TLS certificate for each solution. For production use, it is recommended that you override this with a certificate generated for your own domain name. In development, you may choose to operate with the provided certificate.  
 
@@ -77,10 +77,10 @@ import javax.net.ssl.X509TrustManager;
 
 ```
 
-## Authenticate to obtain a JSON Web Token (JWT)
+## Authenticate to Obtain a JSON Web Token (JWT)
 If the Access Control Service (ACS) is included in the solution, you first need to authenticate to ACS and then receive a JWT to include on any subsequent API call. Authentication is achieved through a GET request to the *h<span>ttps://sofy-auth.{external.ip}.nip.io/login* endpoint using the HTTP Basic authentication protocol.
 
-There are two userids that are created for every solution and you can add more userids if you wish.
+There are two User IDs (userids) that are created for every solution and you can add more User IDs if you wish.
 
 | Userid			| Default password			| Access |
 | ----------- | ----------- | ----------- |
@@ -89,7 +89,7 @@ There are two userids that are created for every solution and you can add more u
 
 To access Solution Console, use the *sol-admin* administrator id.
 
-The userid and password must be Base64 encoded and included in the **Authorization** HTTP header, as shown in the example below:
+The User ID (userid) and password must be Base64 encoded and included in the **Authorization** HTTP header, as shown in the example below:
 
 ```
 		String idpw = "user:pass";
@@ -140,7 +140,7 @@ The userid and password must be Base64 encoded and included in the **Authorizati
 
 ```
 
-The JWT will be valid for 5 minutes, then will expire, and re-authentication will be necessary. If you wish to query the expiry time of the token, the code below shows how to do that using the Auth0 java-jwt library.  
+The JWT will be valid for 5 minutes and then will expire, after which re-authentication will be necessary. If you wish to query the expiry time of the token, the code below shows how to do that using the Auth0 java-jwt library.  
 
 ```
 import com.auth0.jwt.JWT;
@@ -167,7 +167,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 	    	}
 
 ```
-## Call the catalog service REST API
+## Call the Catalog Service REST API
 
 Once you have the URL for the REST method you want to call, an HTTP client that will handle self-signed certificates (unless you have applied your own domain/certificate), and the authorization token (if ACS is used in your solution), then you are ready to make a call to a catalog service REST API.
 
