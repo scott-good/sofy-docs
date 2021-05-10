@@ -46,7 +46,7 @@ ___
 
 ## **Working with Multiple License Servers**
 
-If your license entitlement for one product is in a different license server, you can configure that product to send requests directly to your other license server by setting the same properties on that service. For example, if your HCL Informix entitlements are in a separate license server, specify it las below:
+If your license entitlement for one product is in a different license server, you can configure that product to send requests directly to your other license server by setting the same properties on that service. For example, if your HCL Informix entitlements are in a separate license server, specify it as below:
 
 
 ```
