@@ -5,17 +5,17 @@ parent: Using Solutions
 nav_order: 2
 ---
 
-# **Managing user access to a solution**
+# **Managing User Access to a Solution**
 
-Access to the service endpoints in a solution is controlled by the Access Control Service (ACS). If you want to allow unrestricted access to the solution, you can exclude the ACS from your solution. If ACS is included, access to all service endpoints will be restricted to known users, who have to authenticate to ACS, either through an on-screen login (for browser access) or a programmatic login (for application access).
+Access to the service endpoints in a solution is controlled by the Access Control Service (ACS). If you want to allow unrestricted access to the solution, you can exclude the ACS from your solution. If ACS is included, access to all service endpoints will be restricted to known users who must authenticate to ACS, either through an on-screen login (for browser access) or a programmatic login (for application access).
 
 When a solution is generated with ACS, a number of default users and roles are created to allow initial access and setup of the solution. If you need to change or add to the default users, this can be done after the solution has been deployed by accessing the administrative console of the included Keycloak service.
 
 **Note**: If ACS is off, you will be unable to add and change users, passwords, and roles in a deployed solution. 
 
-## **Adding and changing users, passwords, and roles in a deployed solution**
+## **Adding and Changing Users, Passwords, and Roles in a Deployed Solution**
 
-1. Access the Keycloak service using the link from the Solution Console application: under SoFy Common Services it is labeled **User Management**, or access directly by constructing the URL as follows:
+1. Access the Keycloak service using the link from the Solution Console application: under SoFy Common Services, it is labeled **User Management**, or access directly by constructing the URL as follows:
 ```
 https://sofy-kc.{external-ip}.nip.io/auth/
 ```
@@ -23,7 +23,7 @@ https://sofy-kc.{external-ip}.nip.io/auth/
 
 3. On the left of the screen, under **Manage**, select **Users**, and click on **Add User**
 
-4. Enter the appropriate information, at a minimum, the username, then save.
+4. Enter the appropriate information, at a minimum the username will be added. Click save.
 
 5. Move to the **Credentials** tab and set a temporary password.
 
@@ -32,5 +32,5 @@ https://sofy-kc.{external-ip}.nip.io/auth/
     **Note**: The user will have to set a new password in order to activate their account. 
 
 If you wish to allow the new user to access Solution Console, do the following:
-1. Go to the **Role Mappings** tab in Keycloak.
-2. Select the **solution-admin** role and add it for that user. The change should take effect immediately.
+1. Go to the **Role Mappings** tab in Keycloak
+2. Select the **solution-admin** role and add it for that user; the change should take effect immediately
