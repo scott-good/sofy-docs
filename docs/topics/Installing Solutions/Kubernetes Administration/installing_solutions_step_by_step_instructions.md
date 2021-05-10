@@ -38,7 +38,7 @@ To install your solution:
 
 5. Use Helm to install the solution chart
     
-    The solution chart can be downloaded from the SoFy application, on the Solution details screen. 
+    The solution chart can be downloaded from the SoFy application, on the solution details screen. 
     ```
     helm install [release-name] [file-name] --namespace [solution-namespace] --set global.hclImagePullSecret=[secret-name] --set hclFlexnetURL=[flexnet-url] --set hclFlexnetID=[flexnet-id]
     ```
