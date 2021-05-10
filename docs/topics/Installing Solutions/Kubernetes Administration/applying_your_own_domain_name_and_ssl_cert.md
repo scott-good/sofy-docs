@@ -7,11 +7,11 @@ nav_order: 3
 ---
 # **Applying a Domain and SSL Certificate to your Solution**
 
-By default, a SoFy solution will create its own self signed SSL certificate. This is meant for initial development and testing and will throw many warnings and cause issues on most HTTP clients, including browsers and some of the most common programmatic client libraries. There are options to apply your own domain name and a recognized SSL certificate to a Solution; these quick start instructions will describe the simpler method, using the Let's Encrypt service to dynamically generate a certificate.  
+By default, a SoFy solution will create its own self signed SSL certificate. This is meant for initial development and testing and will throw many warnings and cause issues on most HTTP clients, including browsers and some of the most common programmatic client libraries. There are options to apply your own domain name and a recognized SSL certificate to a solution; these quick start instructions will describe the simpler method, using the Let's Encrypt service to dynamically generate a certificate.  
 
 You will need the following prerequisites:
 
-  *  A cluster in GCP configured to run a Solution
+  *  A cluster in GCP configured to run a solution
   *  A domain name, for example one purchased from https://domains.google.com/
 
 
@@ -20,7 +20,7 @@ This document will go through the following steps:
 *  Creating a GCP service account with the DNS Administrator role
 *  Creating a Kubernetes secret with the service account credentials
 *  Configuring your solution to use the domain name and request certificate generation at install
-*  Accessing your Solution using the domain name and validating the certificate
+*  Accessing your solution using the domain name and validating the certificate
 ____
 ## **I. Configure your Domain Name and DNS Zone**
 
@@ -28,7 +28,7 @@ ____
 2. Navigate to **Network Services** > **Cloud DNS** and click **Create Zone**.
 3. Enter a name for the zone and your domain name in 'DNS name' then click **create**.
 4. When you click on the newly created zone, you will see a list of DNS servers, which need to be copied into your domain name configuration.
-5. Log into https://domains.google.com; in 'My Domains' click on the domain name that you are using for the Solution.
+5. Log into https://domains.google.com; in 'My Domains' click on the domain name that you are using for the solution.
 6. Navigate to **DNS** then select **Use custom name servers**.
 7. Cut and paste the DNS servers (one at a time, do not include the trailing '.') from the GCP Cloud DNS page to the Google domain name entry, then save.
 
