@@ -7,7 +7,7 @@ nav_order: 3
 ---
 # **Applying a Domain and SSL Certificate to your Solution**
 
-By default, a SoFy solution will create its own self signed SSL certificate. This is meant for initial development and testing and will throw many warnings and cause issues on most HTTP clients, including browsers and some of the most common programmatic client libraries. There are options to apply your own domain name and a recognized SSL certificate to a solution; these quick start instructions will describe the simpler method, using the Let's Encrypt service to dynamically generate a certificate.  
+By default, a SoFy Solution will create its own self signed SSL certificate. This is meant for initial development and testing and will throw many warnings and cause issues on most HTTP clients, including browsers and some of the most common programmatic client libraries. There are options to apply your own domain name and a recognized SSL certificate to a solution; these quick start instructions will describe the simpler method, using the Let's Encrypt service to dynamically generate a certificate.  
 
 You will need the following prerequisites:
 
@@ -107,7 +107,7 @@ certificate:
  ```
 
 ____
-## **V. Access your Solution using the domain name and validiate the certificate**
+## **V. Access your solution using the domain name and validiate the certificate**
 
 For example:
 
