@@ -23,7 +23,7 @@ Your FlexNet information should be obtained from your organization's license adm
 hclFlexnetURL=https://hclsoftware.compliance.flexnetoperations.com
 ```
 
-If you have administrative rights to the [FlexNet Operations Portal](https://hclsoftware.flexnetoperations.com/flexnet/operationsportal) then you can retrieve the ID for your existing Cloud License Server(s) in **Devices** view. You may also use the **Devices** view to create new Cloud License Servers and manage the entitlements mapped to a given Cloud License Server.  
+If you have administrative rights to the [FlexNet Operations Portal](https://hclsoftware.flexnetoperations.com/flexnet/operationsportal) then you can retrieve the ID for your existing Cloud License Server(s) in **Devices** view. You may also use the **Devices** view to create new Cloud License Server(s) and manage the entitlements mapped to a given Cloud License Server.  
 
 If your organization uses a locally installed license server, the URL will include a domain specific to your organization or an IP address and port typically in the 27000-27009 range.
 
@@ -38,7 +38,7 @@ If your organization uses a locally installed license server, the URL will inclu
     2. Provide your FlexNet License Server URL and FlexNet Server ID
     3. Click **Apply** and your license will be applied
 
-Note that some product services may not initialize until the license server has been configured and may require a restart to connect to the license server. This can be achieved by deleting the relevant pod, which can be done through the 'Pods' view in the Solution Console.
+Note that some product services may not initialize until the license server has been configured and may require a restart to connect to the license server. This can be achieved by deleting the relevant pod, which can be done through the *Pods* view in the Solution Console.
 
 Both methods will allow you to view and change the current settings through the Solution Console, and to view the license entitlements in the license server.
 ___
