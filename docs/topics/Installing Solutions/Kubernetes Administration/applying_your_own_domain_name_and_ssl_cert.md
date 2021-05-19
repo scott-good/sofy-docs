@@ -5,7 +5,7 @@ parent: Kubernetes Administration
 grand_parent: Installing Solutions
 nav_order: 3
 ---
-# **Applying a Domain and SSL Certificate to your Solution**
+# **Applying a Domain and SSL Certificate to Your Solution**
 
 By default, a SoFy Solution will create its own self signed SSL certificate. This is meant for initial development and testing and will throw many warnings and cause issues on most HTTP clients, including browsers and some of the most common programmatic client libraries. There are options to apply your own domain name and a recognized SSL certificate to a solution; these quick start instructions will describe the simpler method, using the Let's Encrypt service to dynamically generate a certificate.  
 
@@ -22,7 +22,7 @@ This document will go through the following steps:
 *  Configuring your solution to use the domain name and request certificate generation at install
 *  Accessing your solution using the domain name and validating the certificate
 ____
-## **I. Configure your Domain Name and DNS Zone**
+## **I. Configure your domain name and DNS zone**
 
 1. Log into your GCP account at https://console.cloud.google.com.
 2. Navigate to **Network Services** > **Cloud DNS** and click **Create Zone**.
@@ -33,7 +33,7 @@ ____
 7. Cut and paste the DNS servers (one at a time, do not include the trailing '.') from the GCP Cloud DNS page to the Google domain name entry, then save.
 
 ____
-## **II. Create a GCP Service Account with the DNS Administrator Role**
+## **II. Create a GCP service account with the DNS administrator role**
 
   1. Log into your GCP trial account at https://console.cloud.google.com.
   2. Navigate to **IAM & Admin** > **Service Accounts** and click on **Create service account**.
