@@ -209,7 +209,7 @@ GKE is not secure by default. Any resources with an External IP in your new clus
 2.	Edit your cluster and set Master authorized networks to *Enabled*. This will ensure that your cluster API can only be accessed by GCP (in your Cloud Shell). If you want to use a local kubectl to connect to your cluster, you can add your own IP address as well (e.g 1.2.3.4/32)
 
 **Create a Firewall Rule for your Cluster**
-1.	Navigate to your GCP account Firewall rules page.
+1.	Navigate to your GCP account Firewall rules page
 2.	Lock down your Firewall rules and stay on top of them
     * GCP creates some wide open firewall rules allowing ssh and other protocols to your GCP resources. The allowed client IP addresses are set to “0.0.0.0/0” which effectively means open to the internet. We will show you how to delete those below
     * Also when deploying “LoadBalancer” services in GKE, you will get a public IP address for the service and firewall rules will be automatically created letting the internet get to the service’s exposed ports. To address this:
