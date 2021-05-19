@@ -5,8 +5,8 @@ parent: Kubernetes Administration
 grand_parent: Installing Solutions
 nav_order: 2
 ---
-# **Installing Solutions Step By Step Instructions**
-These instructions are designed for those who have an existing Kubernetes environment, and detail the steps for solution install. Supported versions of Kubernetes, Helm and Cert-Manager are listed in the **Supported Kubernetes Environments** guide. If you need more details on any step, see the **Installing Solutions: Getting Started with a GCP Trial Account Tutorial**, which also provides a script that automates most of the setup.
+# **Installing Solutions Step-By-Step Instructions**
+These instructions are designed for those who have an existing Kubernetes environment, and detail the steps for solution install. Supported versions of Kubernetes, Helm, and Cert-Manager are listed in the **Supported Kubernetes Environments** guide. If you need more details on any step, see the **Installing Solutions: Getting Started with a GCP Trial Account Tutorial**, which also provides a script that automates most of the setup.
 
 You will need permissions to install to the Kubernetes cluster. Use of a cluster that supports dynamic PV is recommended.
 
@@ -22,7 +22,7 @@ To install your solution:
 
 
 3. Create a namespace for your solution (optional)
-    * Each solution must be installed in a separate namespace.  If you install into the default namespace you can omit the --namespace parameters on the remaining commands.
+    * Each solution must be installed in a separate namespace. If you install into the default namespace you can omit the --namespace parameters on the remaining commands.
       ```
       kubectl create namespace [name]
       ```
@@ -46,10 +46,10 @@ To install your solution:
     * **[release-name]** A Helm release name that is not already used
     * **[file-name]** The file name of your downloaded solution
     * **[solution-namespace]** The namespace you are installing your solution into
-    * **[secret-name]** The name of your pull secret created in Step #4. 
-    * **[flexnet-url],[flexnet-id]** Your license server information. For more information about these fields see **How to connect a Solution to a FlexNet License Server** below. If you do not specify these values, some solution contents may not initialize properly or have full function available until you enter your license server information via the Solution Console 'Settings'. 
+    * **[secret-name]** The name of your pull secret created in Step #4
+    * **[flexnet-url],[flexnet-id]** Your license server information. For more information about these fields see **How to Connect a Solution to a FlexNet License Server** below. If you do not specify these values, some solution contents may not initialize properly or have full function available until you enter your license server information via the Solution Console *Settings* 
     
-    You may need to set additional values overrides for the specific contents of your solution, see the documentation for those products and services in the SoFy catalog.
+    You may need to set additional values overrides for the specific contents of your solution, see the documentation for those products and services in the SoFy Catalog.
 
     If you are using an AWS EKS cluster, add this annotation to the solution's ambassador service so it can receive an external IP:
     ```
@@ -72,9 +72,9 @@ To install your solution:
 
 6.  Access the Solution Console
 
-    Once the install has completed and all pods are ready, enter the HOST into this link to access the Solution Console app in your browser: h<span>ttps://sofy-console.[HOST] . You will see some warnings about the certificate used in the solution; it is safe to accept these and proceed to the Solution Console application. Log in to the application with the default userid and password: sol-admin and pass.
+    Once the install has completed and all pods are ready, enter the HOST into this link to access the Solution Console app in your browser: h<span>ttps://sofy-console.[HOST]. You will see some warnings about the certificate used in the solution; it is safe to accept these and proceed to the Solution Console application. Log in to the application with the default User ID (userid) and password: sol-admin and pass.
 
     The solution console provides information about all parts of the solution, as well as links to the home pages of the included products and services.
 
-    The Tutorial **Installing Solutions: Getting Started with Solutions in a Google Cloud Platform Trial Account Tutorial** provides some details on viewing the status of the install process, and some troubleshooting tips.
+    The Tutorial **Installing Solutions: Getting Started with Solutions in a Google Cloud Platform Trial Account Tutorial** provides detail on viewing the status of the install process and various troubleshooting tips.
 
