@@ -9,51 +9,52 @@ nav_order: 1
 
 ## **Quick HCL SoFy Introduction**
 
-Welcome to HCL SoFy (short for Solution Factory), the next generation software development accelerator. Battle-hardened enterprise software is being modernized and transformed through the application of cloud-centered technologies and practices. These include the following: running in docker containers, creation of stand-alone and individually scalable services, enablement for cloud scaling and orchestration, continuous delivery of updates, and opening up capabilities with new REST APIs.
-HCL SoFy amplifies the integration of world-class HCL Software products & services to generate a customized solution quickly and easily. This all can be accomplished in three easy steps: Explore the Catalog, Create a Solution, and Release to the Cloud.
+Welcome to HCL SoFy (short for “Solution Factory”), the easy way to get started deploying HCL Software products to Kubernetes. Use SoFy to install and configure your HCL Software products in Kubernetes within minutes through our application of cloud-centric technologies and practices. These include the following: running in docker containers, creating stand-alone and individually scalable services, enabling cloud scaling and orchestration, continuous delivery of updates, and opening capabilities with new REST APIs. 
 
-
-![](/topics/images/doc_video.jpg)
+HCL SoFy amplifies the integration of world-class HCL Software Products, Modules, and Demos to generate a customized solution quickly and easily in just three simple steps: Explore the Catalog, Create a Solution, and Release to the Cloud.
 
 
 ## **Step 1: Explore the Catalog**
 
-Wouldn’t it be great if there was a catalog of ready-to-use enterprise software products and services with a tool to easily deploy them to a Cloud Native environment like Google Kubernetes Engine? HCL SoFy uses Helm technology to provide HCL products and APIs as cloud-ready building blocks.  These catalog products and services are enabled for kubernetes as docker images and helm charts.
+HCL SoFy is a catalog of ready-to-use HCL Software Products, Modules, and Demos with built-in tools for easy deployment to a cloud native environment of your choice. SoFy uses Helm technology to provide HCL Products as cloud-ready building blocks. All HCL SoFy software is enabled for Kubernetes as docker images and Helm charts. 
 
-To view the entire catalog, select “Catalog” on the header menu. Click on the dropdown button to change the version, add it to a solution, or click on the card to learn more. The catalog detail page shows important information and documentation for using that product or service. You can also search the catalog by typing keywords in the Search Box.
+To view the entire catalog, select **Catalog** on the header menu. Click on a card to learn more about the service. The catalog details page shows important information and documentation for using that product or service. Search the catalog by typing keywords in the Search Box or by using the filters.
+
 
 
 ## **Step 2: Creating a solution**
-Creating a solution can be quick and easy. To begin click on **Catalog** tab on the top left and follow the instructions below:
+Creating a solution can be quick and easy. From the catalog page:
 
-1. Select one or more products and or services from the catalog. Click **ADD TO SOLUTION**.
+1. Select one or more products, modules, or demos from the catalog. Click **ADD TO SOLUTION**. Note: If you add a demo, it will automatically add the coordinating product(s) to the solution.
+
 2. The Solution Panel will pop up on the bottom of the page. Give your solution a name, version, and a description and click **CREATE**.
 
    **Note:** You can expand the Solution Panel for a more detailed view where you can select or deselect SoFy Common Services.
 
-3. Once your solution is created, you will be taken to the Solution detail page, where you can view the contents of your solution and download the .tgz file.
+3. Once your solution is created, you will be taken to the Solution Details page, where you can view the contents of your solution and download the .tgz file.
 
    **Note:** You have the option to use our in-house sandbox to preview your solution.
 
 
-## **Step 3: Release to the cloud**
-Deliver in a cloud native, container-based environment, that’s fast and cost effective. Whether you choose a public cloud, like Google Kubernetes Engine (GKE), or prefer a private platform, like Anthos GKE, SoFy solutions are portable across all Kubernetes environments so you have complete freedom of choice.
+## **Step 3: Release to the Cloud**
+HCL SoFy is designed to allow solutions to deploy to any Kubernetes environment, giving you several options: open source Kubernetes for a self-managed environment, public cloud vendors like Google Kubernetes Engine or Amazon Elastic Kubernetes Service, or private cloud platforms that include Kubernetes capability within their data center or cloud account. 
 
-After creating your solution with the products and services of your choice, you can preview it our sandbox or use it locally in the cloud of your choice. Whether you choose a public cloud, like Google Kubernetes Engine (GKE), or prefer a private platform, like Anthos GKE, SoFy solutions are portable across all Kubernetes environments so you have complete freedom of choice.
+After creating your solution with the items of your choice, you can preview it our sandbox or use it locally in the cloud of your choice. SoFy also offers a hosting integration with our managed cloud environment application, HCL Now.
 
-1. To preview your solution in the sandbox, click **DEPLOY**. You can either Preview in our sandbox or Download it for local use.
-2. Once deployed to the sandbox, you can view your solution in the Solution Console. Click **VIEW SOLUTION CONSOLE**.
+1. You can either preview in our sandbox, download it in your environment of choice, or request HCL Now hosting services.
+2. To preview your solution in the sandbox, click **DEPLOY**.
+3. Once deployed to the sandbox, you can view your solution in the Solution Console. Click **VIEW SOLUTION CONSOLE**.
 
-Detailed information for installing Solutions can be found in the following guides:
+Detailed information for installing Solutions can be found in the following SoFy Guides:
 
 * Installing Solutions: Getting Started with Solutions in a Google Cloud Platform Trial Account Tutorial
 * Installing Solutions: Overview for Kubernetes Administrators  
 * Installing Solutions: Step-by-Step Instructions
-* Applying your own domain name and SSL Cert
+* Applying your Own Domain Name and SSL Cert
 * Supported Kubernetes Environments
 
 
-While SoFy does provide a sandbox (Kubernetes cluster) for limited testing of solutions, it is not a deployment platform. You can read more below in **Supported Kubernetes Environments**.
+While SoFy does provide a sandbox (Kubernetes cluster) for limited testing of solutions, it is not a deployment platform. You can read more in the SoFy Guide entitled **Supported Kubernetes Environments**.
 
 **Note** So far, solutions have been tested in GCP and AWS only.
 ____
