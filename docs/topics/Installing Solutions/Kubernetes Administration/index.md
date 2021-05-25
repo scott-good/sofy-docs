@@ -14,7 +14,7 @@ You will need the following:
 * Cert-Manager must be installed in the target cluster
 * Each solution must be in a separate namespace
 * Create a pull secret using your HCL repository credentials
-* Install the solution chart, providing the pull secret and details of your license server
+* Install the solution chart, providing the pull secret, and details of your license server
 
 ```
 helm install [release-name] [file-name] --set global.hclImagePullSecret=[secret-name] --set hclFlexnetURL=[flexnet-url] --set hclFlexnetID=[flexnet-id]
