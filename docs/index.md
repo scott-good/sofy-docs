@@ -22,7 +22,7 @@ To view the entire catalog, select **Catalog** on the header menu. Click on a ca
 
 
 
-## **Step 2: Create a solution**
+## **Step 2: Create a Solution**
 Creating a solution can be quick and easy. From the catalog page:
 
 1. Select one or more products, modules, or demos from the catalog. Click **ADD TO SOLUTION**. Note: If you add a demo, it will automatically add the coordinating product(s) to the solution.
@@ -57,4 +57,3 @@ Detailed information for installing Solutions can be found in the following SoFy
 While SoFy does provide a sandbox (Kubernetes cluster) for limited testing of solutions, it is not a deployment platform. You can read more in the SoFy Guide entitled **Supported Kubernetes Environments**.
 
 **Note** So far, solutions have been tested in GCP and AWS only.
-____
