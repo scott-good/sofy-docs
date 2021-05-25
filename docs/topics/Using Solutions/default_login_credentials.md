@@ -19,4 +19,4 @@ The Solution Console is accessible once your solution has been deployed. The def
 
 Once you are logged in, you can obtain the default logins for your service or product in the Solution Console. To view the default logins, click on **General Information** on your service or product's card on the Dashboard.
 
-These are the default credentials and may not work if they have already been reset/changed. If you are unable to login, please Contact Support.
+These are the default credentials and may not work if they have already been reset/changed. If you are unable to login, please contact SoFy Support.
