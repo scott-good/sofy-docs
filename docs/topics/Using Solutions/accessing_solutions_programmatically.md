@@ -13,16 +13,16 @@ Many of the SoFy Catalog services in a solution contain REST APIs, which are sim
 There are two ways to discover the REST APIs provided by SoFy Catalog services and products. Both rely on the API being documented using the Swagger v2 or OpenAPI v3 standard:
 
 * **SoFy Catalog**
-	* Click on a catalog entry to view its documentation. The ‘API Documentation’ tab will contain available REST API documentation. 
-In the catalog, this is simply a rendering of the documentation; there is no live instance of the service available, so the REST API methods cannot be run in this environment. The documentation is provided as reference for your application coding.
+	* Click on a catalog card to view its documentation. The *API Documentation* tab will contain available REST API documentation. 
+In the catalog, this is simply a rendering of the documentation; there is no live instance of the service available, so the REST API method cannot be run in this environment. The documentation is provided as reference for your application coding.
 
 
 * **Swagger UIs in Deployed Solutions**
-	* In some cases, a live Swagger or OpenAPI UI is available within a service or product once it is deployed in an installed solution. Links to these UIs are shown in the Solution Console in the ‘General Information’ for each entry, under the ‘API EXPLORER’ tag. 
+	* In some cases, a live Swagger or OpenAPI UI is available within a service or product once it is deployed in an installed solution. Links to these UIs are shown in the Solution Console in the *General Information* for each entry, under the *API Explorer* tag. 
 
 ## Discovering REST API Base URLs in Deployed Solutions
 
-REST API base URLs are displayed in the Solution Console, in the ‘General Information’ for each entry, under the ‘API BASE’ tag.
+REST API base URLs are displayed in the Solution Console, in the *General Information* for each entry, under the *API BASE* tag.
 
 ## Handling Self-Signed Certificates
 
@@ -171,7 +171,7 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 
 Once you have the URL for the REST method you want to call, an HTTP client that will handle self-signed certificates (unless you have applied your own domain/certificate), and the authorization token (if ACS is used in your solution), then you are ready to make a call to a catalog service REST API.
 
-There are a couple of workarounds shown in the example, with a counter to limit the retry attempts.
+There are a couple of workarounds shown in the example below, with a counter to limit the retry attempts.
 ```
 	private static void callApi() {
 		HttpResponse response = null;
