@@ -60,7 +60,7 @@ There are two ways to do this: a) unpack, edit, and then repack the solution Hel
 global:
   domain: "sol1.alexmul.dev"
 ```
-2. Search for the 'certificate:' property in the same file, and add/edit these values. The GCP project ID can be seen by clicking the down-arrow next to your project name in the GCP console.  
+2. Search for the *certificate:* property in the same file, and add/edit these values. The GCP project ID can be seen by clicking the down-arrow next to your project name in the GCP console.  
 
 ```yaml
 certificate:
@@ -89,9 +89,9 @@ certificate:
       name: "gcp-service-account-secret"
       key: "credentials.json"
 ```
-3.  Optional: Edit the top-level 'chart.yaml' file and increment the version number of the chart. It is a best practice to increment the version number when any change is made to the Helm chart.
+3.  Optional: Edit the top-level *chart.yaml* file and increment the version number of the chart. It is a best practice to increment the version number when any change is made to the Helm chart.
 
-4. Repackage the Helm chart with the 'Helm package' command.  
+4. Repackage the Helm chart with the *Helm package* command.  
 
 5. Install your modified Helm chart:
 
