@@ -27,10 +27,10 @@ https://sofy-kc.{external-ip}.nip.io/auth/
 
 5. Move to the **Credentials** tab and set a temporary password.
 
-    At this point, the new user will be able to log into the solution, set a new password, and access catalog services. They will not be able to access Solution Console.
+    At this point, the new user will be able to log into the solution, set a new password, and access catalog services. They will not be able to access the Solution Console.
     
     **Note**: The user will have to set a new password in order to activate their account. 
 
-If you wish to allow the new user to access Solution Console, do the following:
+If you wish to allow the new user to access the Solution Console, do the following:
 1. Go to the **Role Mappings** tab in Keycloak
 2. Select the **solution-admin** role and add it for that user; the change should take effect immediately
