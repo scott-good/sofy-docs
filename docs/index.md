@@ -22,7 +22,7 @@ To view the entire catalog, select **Catalog** on the header menu. Click on a ca
 
 
 
-## **Step 2: Creating a solution**
+## **Step 2: Create a solution**
 Creating a solution can be quick and easy. From the catalog page:
 
 1. Select one or more products, modules, or demos from the catalog. Click **ADD TO SOLUTION**. Note: If you add a demo, it will automatically add the coordinating product(s) to the solution.
