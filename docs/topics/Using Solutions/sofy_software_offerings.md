@@ -1,7 +1,7 @@
 ---
-title: Using Solutions
+title: Software Offerings
 layout: default
-has_children: true
+parent: Using Solutions
 nav_order: 4
 ---
 # **The Difference Between Products, Modules, and Demos**
