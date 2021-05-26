@@ -1,0 +1,26 @@
+# **The Difference Between Products, Modules, and Demos**
+
+## **Our SoFy Catalog contains 3 software offerings:**
+   * *Products* are HCL cloud native product offerings 
+   * *Modules* are HCL microservices which can be used as part of a larger solution
+   * *Demos* are pre-configured installations of software and other resources for demonstrating the value of HCL products
+
+From our SoFy Catalog page, you can add one or multiple products to your solution. Modules can be added to support the products in your solution. 
+
+Demos act a bit differently. When you add a demo to a solution, it will automatically bundle the associated product with it – for instance, a custom theme you can install on your website with specific colors, fonts, and styling. Demos install scenarios and content into your product for you to experience them to their fullest, richest extent. The name “Demos” comes from their main purpose: to “demonstrate” the power of HCL Software Products.
+
+
+## **Catalog Tips**
+ * SoFy Demo Packs include all products required for the demo, so you only need to add the demo pack to your SoFy Solution.
+ * You can build a solution containing only modules.
+ * A solution containing only the demo without the coordinating product is not recommended.
+ * Demo packs are a type of integration used to quickly prepare an environment for demo use and sometimes to create integrations between products—such as between HCL Commerce and HCL Digital Experience (DX).
+ * Adding several products into a solution does not automatically integrate those products with one another.
+
+
+## **Navigating the Catalog**
+Our SoFy Catalog is listed from Products, to Modules, and then Demos, descending down the page. Use filters or key words in the search box to find the item you are looking for.
+
+Some product cards indicate a teal layers icon in the top righthand corner. This denotes an add-on demo is available for this particular product. Click on the icon to view the add-on software.
+
+When you click on a demo card from the catalog, a populated details page will tell you important information about what the demo includes.
