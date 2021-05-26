@@ -1,3 +1,9 @@
+---
+title: Using Solutions
+layout: default
+has_children: true
+nav_order: 4
+---
 # **The Difference Between Products, Modules, and Demos**
 
 ## **Our SoFy Catalog contains 3 software offerings:**
