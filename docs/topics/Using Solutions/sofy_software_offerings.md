@@ -9,6 +9,11 @@ From our SoFy Catalog page, you can add one or multiple products to your solutio
 
 Demos act a bit differently. When you add a demo to a solution, it will automatically bundle the associated product with it – for instance, a custom theme you can install on your website with specific colors, fonts, and styling. Demos install scenarios and content into your product for you to experience them to their fullest, richest extent. The name “Demos” comes from their main purpose: to “demonstrate” the power of HCL Software Products.
 
+<p align="center">
+  
+  ![image](https://user-images.githubusercontent.com/83314396/119736192-357da100-be32-11eb-860d-e95be231837c.png)
+
+</p>
 
 ## **Catalog Tips**
  * SoFy Demo Packs include all products required for the demo, so you only need to add the demo pack to your SoFy Solution.
