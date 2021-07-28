@@ -22,7 +22,7 @@ title: HCL SoFy Docs
 description: >- # this means to ignore newlines until "baseurl:"
   The future documentation hub for HCL SoFy
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sofydocs.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://docs.hclsofy.com" # the base hostname & protocol for your site, e.g. http://example.com
 footer_content: "© Copyright 2021 HCL SoFy | <a href=\"https://hcltechsw.com/wps/portal/legal/privacy\" style=\"margin-left: 10px;\">Privacy Statement</a> | <a href=\"https://www.hcltechsw.com/wps/portal/legal/terms-use\">Terms of Use</a>"
 heading_anchors: true
 # Build settings
