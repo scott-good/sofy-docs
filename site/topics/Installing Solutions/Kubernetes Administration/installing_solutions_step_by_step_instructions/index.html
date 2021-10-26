@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Install Step-By-Step - SoFy Docs</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">SoFy Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Welcome</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../about/" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Installing Solutions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">Installing Solutions</a>
+</li>
+            
+<li>
+    <a href="../../using_new_gcp_trial_account/" class="dropdown-item">Quick Start - GCP Trial</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kubernetes Administration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Kubernetes Administration</a>
+</li>
+            
+<li>
+    <a href="../applying_your_own_domain_name_and_ssl_cert/" class="dropdown-item">Domains & Certificates</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Install Step-By-Step</a>
+</li>
+            
+<li>
+    <a href="../setting_up_flexnet/" class="dropdown-item">FlexNet Licensing</a>
+</li>
+            
+<li>
+    <a href="../supported_kubernetes_environments/" class="dropdown-item">Supported Environments</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Solution Overview</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Solution%20Overview/" class="dropdown-item">Solution Overview</a>
+</li>
+            
+<li>
+    <a href="../../../Solution%20Overview/sofy_common_services/" class="dropdown-item">SoFy Common Services</a>
+</li>
+            
+<li>
+    <a href="../../../Solution%20Overview/solution-overview/" class="dropdown-item">What is a Solution?</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Using Solutions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Using%20Solutions/" class="dropdown-item">Using Solutions</a>
+</li>
+            
+<li>
+    <a href="../../../Using%20Solutions/accessing_solutions_programmatically/" class="dropdown-item">Accessing Programmatically</a>
+</li>
+            
+<li>
+    <a href="../../../Using%20Solutions/default_login_credentials/" class="dropdown-item">Default Credentials</a>
+</li>
+            
+<li>
+    <a href="../../../Using%20Solutions/managing_solution_users/" class="dropdown-item">Managing User Access</a>
+</li>
+            
+<li>
+    <a href="../../../Using%20Solutions/sofy_software_offerings/" class="dropdown-item">Software Offerings</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../applying_your_own_domain_name_and_ssl_cert/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../setting_up_flexnet/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#installing-solutions-step-by-step-instructions" class="nav-link">Installing Solutions Step-By-Step Instructions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="installing-solutions-step-by-step-instructions"><strong>Installing Solutions Step-By-Step Instructions</strong></h1>
+<p>These instructions are designed for those who have an existing Kubernetes environment, and detail the steps for solution install. Supported versions of Kubernetes, Helm, and Cert-Manager are listed in the <strong>Supported Kubernetes Environments</strong> guide. If you need more details on any step, see the <strong>Installing Solutions: Getting Started with a GCP Trial Account Tutorial</strong>, which also provides a script that automates most of the setup.</p>
+<p>You will need permissions to install to the Kubernetes cluster. Use of a cluster that supports dynamic PV is recommended.</p>
+<p>To install your solution:</p>
+<ol>
+<li>
+<p>Install a supported version of Helm 3
+   <code>wget https://hclcr.io/files/sofy/scripts/get-helm3.sh &amp;&amp; source get-helm3.sh</code></p>
+</li>
+<li>
+<p>Install Cert-Manager in your cluster</p>
+</li>
+<li>
+<p>This script can be used to perform the Cert-Manager install, or to examine the commands required:  https://hclcr.io/files/sofy/scripts/cert-manager-setup.sh</p>
+</li>
+<li>
+<p>Create a namespace for your solution (optional)</p>
+<ul>
+<li>Each solution must be installed in a separate namespace; if you install into the default namespace you can omit the --namespace parameters on the remaining commands
+  <code>kubectl create namespace [name]</code></li>
+</ul>
+</li>
+<li>
+<p>Create an image pull secret in the solution namespace
+    <code>kubectl create secret docker-registry [secret-name] --docker-server=hclcr.io --docker-username=[sofy userid] --docker-password=[CLI secret] --namespace=[solution namespace]</code></p>
+<ul>
+<li>To set your Harbor CLI secret, login to hclcr.io with your HCL/SoFy credentials, selecting LOGIN VIA OIDC PROVIDER</li>
+<li>Open your User Profile (in the top right corner, click on the dropdown for your username) and enter a secret string of your choice </li>
+<li>Use this string as the CLI secret in the command shown above</li>
+</ul>
+</li>
+<li>
+<p>Use Helm to install the solution chart</p>
+<ul>
+<li>The solution chart can be downloaded from the SoFy application, on the solution details screen</li>
+</ul>
+<p><code>helm install [release-name] [file-name] --namespace [solution-namespace] --set global.hclImagePullSecret=[secret-name] --set hclFlexnetURL=[flexnet-url] --set hclFlexnetID=[flexnet-id]</code>
+Summary of the variables above:
+* <strong>[release-name]</strong> A Helm release name that is not already used
+* <strong>[file-name]</strong> The file name of your downloaded solution
+* <strong>[solution-namespace]</strong> The namespace you are installing your solution into
+* <strong>[secret-name]</strong> The name of your pull secret created in Step #4
+* <strong>[flexnet-url],[flexnet-id]</strong> Your license server information. For more information about these fields see <strong>How to Connect a Solution to a FlexNet License Server</strong> below. If you do not specify these values, some solution contents may not initialize properly or have full function available until you enter your license server information via the Solution Console <em>Settings</em> </p>
+<p>You may need to set additional value overrides for the specific contents of your solution, see the documentation for those products and services in the SoFy Catalog.</p>
+<p>If you are using an AWS EKS cluster, add this annotation to the solution's ambassador service so it can receive an external IP:
+<code>kubectl annotate svc [solution-ambassador-svc] -n [solution-namespace] service.beta.kubernetes.io/aws-load-balancer-internal=0.0.0.0/0</code>
+<strong>Note:</strong> The process of assigning an external LoadBalancer IP address to the annotated service may take a few minutes.</p>
+<p><code>kubectl get cm [releasename]-domain -o yaml</code>
+The output will be similar to the following. You will need the value of the HOST field:</p>
+<p><code>apiVersion: v1
+data:
+    HOST: 10.190.16.62.nip.io
+    HOST_PROTOCOL: https
+kind: ConfigMap</code></p>
+</li>
+<li>
+<p>Access the Solution Console</p>
+<p>Once the install has completed and all pods are ready, enter the HOST into this link to access the Solution Console app in your browser: h<span>ttps://sofy-console.[HOST]. You will see some warnings about the certificate used in the solution; it is safe to accept these and proceed to the Solution Console application. Log in to the application with the default User ID (userid) and password: sol-admin and pass.</p>
+<p>The Solution Console provides information about all parts of the solution, as well as links to the home pages of the included products and services.</p>
+<p>The Tutorial <strong>Installing Solutions: Getting Started with Solutions in a Google Cloud Platform Trial Account Tutorial</strong> provides detail on viewing the status of the install process and various troubleshooting tips.</p>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
