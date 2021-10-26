@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>FlexNet Licensing - SoFy Docs</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">SoFy Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../../.." class="nav-link">Welcome</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../../about/" class="nav-link">About</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Topics <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Installing Solutions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">Installing Solutions</a>
+</li>
+            
+<li>
+    <a href="../../using_new_gcp_trial_account/" class="dropdown-item">Quick Start - GCP Trial</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Kubernetes Administration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Kubernetes Administration</a>
+</li>
+            
+<li>
+    <a href="../applying_your_own_domain_name_and_ssl_cert/" class="dropdown-item">Domains & Certificates</a>
+</li>
+            
+<li>
+    <a href="../installing_solutions_step_by_step_instructions/" class="dropdown-item">Install Step-By-Step</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">FlexNet Licensing</a>
+</li>
+            
+<li>
+    <a href="../supported_kubernetes_environments/" class="dropdown-item">Supported Environments</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Solution Overview</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Solution%20Overview/" class="dropdown-item">Solution Overview</a>
+</li>
+            
+<li>
+    <a href="../../../Solution%20Overview/sofy_common_services/" class="dropdown-item">SoFy Common Services</a>
+</li>
+            
+<li>
+    <a href="../../../Solution%20Overview/solution-overview/" class="dropdown-item">What is a Solution?</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Using Solutions</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Using%20Solutions/" class="dropdown-item">Using Solutions</a>
+</li>
+            
+<li>
+    <a href="../../../Using%20Solutions/accessing_solutions_programmatically/" class="dropdown-item">Accessing Programmatically</a>
+</li>
+            
+<li>
+    <a href="../../../Using%20Solutions/default_login_credentials/" class="dropdown-item">Default Credentials</a>
+</li>
+            
+<li>
+    <a href="../../../Using%20Solutions/managing_solution_users/" class="dropdown-item">Managing User Access</a>
+</li>
+            
+<li>
+    <a href="../../../Using%20Solutions/sofy_software_offerings/" class="dropdown-item">Software Offerings</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../installing_solutions_step_by_step_instructions/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../supported_kubernetes_environments/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#how-to-connect-a-solution-to-a-flexnet-license-server" class="nav-link">How to Connect a Solution to a FlexNet License Server</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#flexnet-licensing-overview" class="nav-link">FlexNet Licensing Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#flexnet-licensing-in-sofy" class="nav-link">FlexNet Licensing in SoFy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#how-to-determine-your-hclflexneturl-and-hclflexnetid" class="nav-link">How to Determine your hclFlexnetURL and hclFlexnetID</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#working-with-multiple-license-servers" class="nav-link">Working with Multiple License Servers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="how-to-connect-a-solution-to-a-flexnet-license-server"><strong>How to Connect a Solution to a FlexNet License Server</strong></h1>
+<h2 id="flexnet-licensing-overview"><strong>FlexNet Licensing Overview</strong></h2>
+<p>HCL Software is protected by runtime license checks performed against a license server, which runs as an external process. Multiple HCL Software products can perform checks against the same license server. A separate license server is provided for each customer account, containing the product license entitlements for that account. The license server technology is called FlexNet Embedded. License servers are generally hosted in the cloud and accessed over the public network; these are termed Cloud License Servers. Some products allow the option of running the license server within a private network; these are termed Local License Servers. In both cases, the license server is populated with the purchased product entitlements, and the installed HCL Software products are configured to make calls to that license server to validate the required entitlement.</p>
+<h2 id="flexnet-licensing-in-sofy"><strong>FlexNet Licensing in SoFy</strong></h2>
+<p>When HCL Software products are run in a SoFy Solution, the license server information can be set centrally for the solution and it will then be used by all the products in the solution. The Solution Console can be used to view the entitlement information held by that license server and will display a warning if the solution includes a product for which the license server does not include an entitlement.</p>
+<p>When you install a solution into your own environment, you must provide your FlexNet License Server URL and FlexNet License Server ID, so that the solution can connect to the license server.  </p>
+<h2 id="how-to-determine-your-hclflexneturl-and-hclflexnetid"><strong>How to Determine your hclFlexnetURL and hclFlexnetID</strong></h2>
+<p>Your FlexNet information should be obtained from your organization's license administrator. The hclFlexnetID will be unique to your organization. If your organization uses a CLS (Cloud License Server), the hclFlexnetURL will in most cases be: </p>
+<pre><code>hclFlexnetURL=https://hclsoftware.compliance.flexnetoperations.com
+</code></pre>
+<p>If you have administrative rights to the <a href="https://hclsoftware.flexnetoperations.com/flexnet/operationsportal">FlexNet Operations Portal</a> then you can retrieve the ID for your existing Cloud License Server(s) in <strong>Devices</strong> view. You may also use the <strong>Devices</strong> view to create new Cloud License Server(s) and manage the entitlements mapped to a given Cloud License Server.  </p>
+<p>If your organization uses a locally installed license server, the URL will include a domain specific to your organization or an IP address and port typically in the 27000-27009 range.</p>
+<p><strong>There are two ways you can set the license server information in a solution:</strong>
+*  When installing the solution, use override to the hclFlexnetURL and hclFlexnetID properties, for example:</p>
+<pre><code>```
+helm install my-release-name my-solution.tgz --set hclFlexnetURL=https://hclsoftware.compliance.flexnetoperations.com --set hclFlexnetID=ABCD1235654543 --set global.hclImagePullSecret=my-sofy-secret
+```
+</code></pre>
+<ul>
+<li>After installing the solution, using the Solution Console:<ol>
+<li>Within the Solution Console, click on the <strong>Gear</strong> icon and select <strong>Manage License Server</strong></li>
+<li>Provide your FlexNet License Server URL and FlexNet Server ID</li>
+<li>Click <strong>Apply</strong> and your license will be applied</li>
+</ol>
+</li>
+</ul>
+<p>Note that some product services may not initialize until the license server has been configured and may require a restart to connect to the license server. This can be achieved by deleting the relevant pod, which can be done through the <em>Pods</em> view in the Solution Console.</p>
+<p>Both methods will allow you to view and change the current settings through the Solution Console, and to view the license entitlements in the license server.</p>
+<hr />
+<h2 id="working-with-multiple-license-servers"><strong>Working with Multiple License Servers</strong></h2>
+<p>If your license entitlement for one product is in a different license server, you can configure that product to send requests directly to your other license server by setting the same properties on that service. For example, if your HCL Informix entitlements are in a separate license server, specify it as below:</p>
+<pre><code>helm install my-release-name my-solution.tgz --set hclFlexnetURL=[license server URL] --set hclFlexnetID=[license server ID] --set informix.hclFlexnetURL=[informix license server URL] --set informix.hclFlexnetID=[informix license server ID] --set global.hclImagePullSecret=secret-name
+</code></pre>
+<p>Information for that license server will not be displayed by the Solution Console, and any warning about missing license entitlements for that product can be ignored.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
