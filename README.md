@@ -9,8 +9,6 @@ Issue reports and pull requests will be welcomed once we have an first version o
  
 [docs.hclsofy.com](https://docs.hclsofy) runs as a GitHub Pages application but can be developed and run locally as well.
 
-The site is based primarly on the static site generator [Jekyll](https://jekyllrb.com/) and the [Just the Docs](https://pmarsceill.github.io/just-the-docs) Jekyll theme. 
-
 _Steps to setup a local development environment will be coming soon_
 
 ## License

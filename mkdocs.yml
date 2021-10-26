@@ -1,0 +1,43 @@
+site_name: SoFy Docs
+site_url: https://example.com/
+nav:
+  - Welcome to SoFy: index.md
+  - Blog:
+    - Introduction: Blog/0.0_SoFy Blog Introduction.md
+    - Cloud Native: 
+      - Cloud Native 101: Blog/1.1_Cloud Native 101.md
+    - Tech News: Blog/2.0_Tech News.md
+    - SoFy Products: Blog/3.0_SoFy Products.md
+    - HCL Software: Blog/4.0_HCL Software.md
+  - FAQ: FAQ/SoFy FAQ Markdown Template.md
+  - Guides: 
+    - Overview: Guides/0.0_Guide Introduction Page.md
+    - Solutions:
+      - Overview: Guides/1.0_Solution Overview Intro Page.md
+      - What is a Solution?: Guides/1.1_What Is A Solution.md
+      - SoFy Common Services: Guides/1.2_SoFy Common Services.md
+    - Using SoFy Solutions: 
+      - Overview: Guides/2.0_Using SoFy Solutions.md
+      - Default Login Credentials: Guides/2.1_Default Login Credentials.md
+      - Managing Solution Users: Guides/2.2_Managing Solution Users.md
+      - Accessing Programmatically: Guides/2.3_Accessing Solutions Programmatically.md
+      - Products, Modules & Demos: Guides/2.4_Sofy Software Offerings.md
+    - Installing SoFy Solutions:
+      - Overview: Guides/3.0_Installing SoFy Solutions.md
+      - K8s Admin Overview: Guides/3.1_Kubernetes Admin Overview.md
+      - GCP Trial Install: Guides/3.2_GCP Trial Install.md
+      - Supported K8s Environments: Guides/3.3_Supported Kubernetes Environments.md
+      - Step-by-Step Install: Guides/3.4_Step-By-Step Solution Install with Kubernetes.md
+      - Domains and SSL Certs: Guides/3.5_Domains and SSL Certs with Kubernetes.md
+      - FlexNet Licensing with K8s: Guides/3.6_FlexNet Licensing with Kubernetes.md
+  - Release Notes: Release Notes/SoFy Release Notes Template.md
+theme:
+  name: material
+  custom_dir: custom_theme
+  features:
+    - navigation.tracking
+    - navigation.indexes
+extra_css:
+  - stylesheets/sofy.css
+extra_javascript:
+  - javascripts/sofy.js

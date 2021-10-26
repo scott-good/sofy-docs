@@ -86,7 +86,7 @@ yaml | YAML Ain’t Markup Language; a digestible data serialization language co
 
 <a name="myfootnote2">2. </a> Definition source: Oxford Languages and Google 
 
-<a name="myfootnote3">3. </a> Definition source: [Cloudfare](cloudflare.com)
+<a name="myfootnote3">3. </a> Definition source: [Cloudfare](https://cloudflare.com)
 
 <a name="myfootnote4">4. </a>  Definition source: [Cloud Native Computing Foundation (CNCF)]()
 
@@ -97,7 +97,7 @@ yaml | YAML Ain’t Markup Language; a digestible data serialization language co
 
 <a name="myfootnote7">7. </a>Definition source: [Flexera](https://www.flexera.com/products/flexnet-manager.html)
 
- <a name="myfootnote8">8. </a>Definition source: [Grafana](www.grafana.com)
+ <a name="myfootnote8">8. </a>Definition source: [Grafana](https://www.grafana.com)
 
 <a name="myfootnote9">9. </a> Definition source: [Helm documentation](https://v2.helm.sh/docs/glossary/#helm-and-helm)
 
@@ -109,6 +109,6 @@ yaml | YAML Ain’t Markup Language; a digestible data serialization language co
 
   <a name="myfootnote13">13. </a> Definition source: [Prometheus documentation](https://prometheus.io/docs)
 
-  <a name="myfootnote14">14. </a> Definition source: [Cloudfare](cloudflare.com)
+  <a name="myfootnote14">14. </a> Definition source: [Cloudfare](https://cloudflare.com)
 
   
