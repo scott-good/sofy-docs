@@ -135,3 +135,34 @@ window.onload = function() {
 };
 
 // ----------- END code for getting anchors to the right place -------------
+/*
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166634747-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166634747-9');
+</script>
+
+*/
+
+function insertGoogleAnalytics() {
+    let script1 = document.createElement("script");
+    script1.setAttribute('async', '');
+    script1.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-166634747-9');
+    let dochead = document.getElementsByTagName("head")[0];
+    
+    let script2 = document.createElement('script');
+    script2.innerHTML = "\nwindow.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'UA-166634747-9');";
+    insertAfter(script2, dochead);
+    insertAfter(script1, dochead);
+
+}
+function insertAfter(newNode, existingNode) {
+    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+}
+if (window.location.href.toLowerCase().indexOf('docs.hclsofy.com') > -1) {
+    insertGoogleAnalytics();
+}
