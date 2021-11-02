@@ -9,7 +9,8 @@ nav:
     - Tech News: Blog/2.0_Tech News.md
     - SoFy Products: Blog/3.0_SoFy Products.md
     - HCL Software: Blog/4.0_HCL Software.md
-  - FAQ: FAQ/SoFy FAQ Markdown Template.md
+  - FAQ: FAQ/SoFy FAQ Markdown.md
+  - Glossary: Glossary/Glossary.md
   - Guides: 
     - Overview: Guides/0.0_Guide Introduction Page.md
     - Solutions:
@@ -30,7 +31,25 @@ nav:
       - Step-by-Step Install: Guides/3.4_Step-By-Step Solution Install with Kubernetes.md
       - Domains and SSL Certs: Guides/3.5_Domains and SSL Certs with Kubernetes.md
       - FlexNet Licensing with K8s: Guides/3.6_FlexNet Licensing with Kubernetes.md
-  - Release Notes: Release Notes/SoFy Release Notes Template.md
+  - Release Notes:
+    - Overview: Release Notes/Release Notes Overview.md
+    - Release Notes Archive: 
+      - Release Notes Archive 2021: 
+        - Release Notes Archive - Jan 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.1_Release Notes Archive_Jan 2021.md 
+        - Release Notes Archive - Feb 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.2_Release Notes Archive_Feb 2021.md 
+        - Release Notes Archive - Mar 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.3_Release Notes Archive_Mar 2021.md 
+        - Release Notes Archive - Apr 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.4_Release Notes Archive_Apr 2021.md 
+        - Release Notes Archive - May 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.5_Release Notes Archive_May 2021.md 
+        - Release Notes Archive - Jun 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.6_Release Notes Archive_Jun 2021.md 
+        - Release Notes Archive - Jul 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.7_Release Notes Archive_Jul 2021.md 
+        - Release Notes Archive - Aug 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.8_Release Notes Archive_Aug 2021.md 
+        - Release Notes Archive - Sep 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.9_Release Notes Archive_Sep 2021.md 
+        - Release Notes Archive - Oct 2021: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2021/1.1.10_Release Notes Archive_Oct 2021.md 
+      - Release Notes Archive 2020:
+        - Release Notes Archive - Sept 2020: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2020/1.2.1_Release Notes Archive_Sep 2020.md
+        - Release Notes Archive - Oct 2020: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2020/1.2.2_Release Notes Archive_Oct 2020.md 
+        - Release Notes Archive - Nov 2020: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2020/1.2.3_Release Notes Archive_Nov 2020.md 
+        - Release Notes Archive - Dec 2020: Release Notes/Release Notes Archive/1.2_Release Notes Archive_2020/1.2.4_Release Notes Archive_Dec 2020.md 
 theme:
   name: material
   custom_dir: custom_theme
